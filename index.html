@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Random Password Generator -- Scrimba JS Solo Project"
+    />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:ital,wght@0,400;0,500;0,600;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="head-text">
+        <h1 id="head-text">
+          Generate a <span id="random-text">random password</span>
+        </h1>
+      </div>
+      <div class="tagline-text">
+        <p id="tagline-text">Never use an insecure password again</p>
+      </div>
+      <div class="generate-button">
+        <button id="generate" onclick="passGen()">Generate passwords</button>
+      </div>
+      <div class="divider"></div>
+      <div class="password-fields">
+        <div
+          class="pass-field-1"
+          id="copy-pass-field-1"
+          onclick="copyFirstPass()"
+        >
+          <p id="pass1"></p>
+        </div>
+        <div
+          class="pass-field-2"
+          id="copy-pass-field-2"
+          onclick="copySecondPass()"
+        >
+          <p id="pass2"></p>
+        </div>
+      </div>
+    </main>
+    <div class="idfk">
+      <p id="copy-text"></p>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

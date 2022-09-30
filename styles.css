@@ -1,0 +1,155 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f3e53;
+}
+.main-container {
+  position: absolute;
+  background-color: #1f2937;
+  border-radius: 20px;
+  border: 5px solid #10b981;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: start;
+  width: 550px;
+  height: 550px;
+}
+.head-text {
+  position: absolute;
+  top: 110px;
+  left: 52px;
+  width: 354px;
+  height: 80px;
+}
+.tagline-text {
+  position: absolute;
+  top: 215px;
+  left: 52px;
+}
+.generate-button {
+  position: absolute;
+  top: 284px;
+  left: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divider {
+  position: absolute;
+  top: 361px;
+  left: 52px;
+  border-top: 1px solid #2f3e53;
+  height: 0px;
+  width: 446px;
+}
+.password-fields {
+  display: flex;
+  width: 446px;
+  justify-content: space-between;
+  position: absolute;
+  top: 396px;
+  left: 52px;
+}
+.pass-field-1 {
+  font-family: "Source Code Pro", monospace;
+  color: #55f991;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #273549;
+  border-radius: 6px;
+  height: 39px;
+  width: 211px;
+  border: none;
+}
+.pass-field-2 {
+  font-family: "Source Code Pro", monospace;
+  color: #55f991;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #273549;
+  border-radius: 6px;
+  height: 39px;
+  width: 211px;
+  border: none;
+}
+
+.border_help {
+  border: 2px solid dodgerblue;
+}
+.copy-el-1 {
+  color: #9ca3af;
+  position: relative;
+  left: 15px;
+}
+.copy-el-2 {
+  color: #9ca3af;
+  position: relative;
+  left: 15px;
+}
+.idfk {
+  position: absolute;
+  bottom: 10px;
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  color: #4adf86;
+}
+#head-text {
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.025em;
+  color: #e5e7eb;
+}
+#random-text {
+  color: #4adf86;
+}
+#tagline-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #d1d5db;
+}
+#generate {
+  cursor: pointer;
+  padding: 9px 17px 9px 15px;
+  background-color: #10b981;
+  color: azure;
+  border: none;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* #pass1 {
+  cursor: auto;
+}
+#pass2 {
+  cursor: auto;
+} */
+
+/* Hovering over the pass fields */
+
+.pass-field-1:hover {
+  cursor: pointer;
+  border: 1.5px solid #55f991;
+}
+.pass-field-2:hover {
+  cursor: pointer;
+  border: 1.5px solid #55f991;
+}
