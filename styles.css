@@ -6,6 +6,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #2f3e53;
+  transition: background 0.4s linear;
 }
 .main-container {
   position: absolute;
@@ -20,6 +21,7 @@ body {
   text-align: start;
   width: 550px;
   height: 550px;
+  transition: background 0.4s linear;
 }
 .head-text {
   position: absolute;
@@ -27,11 +29,13 @@ body {
   left: 52px;
   width: 354px;
   height: 80px;
+  transition: 0.4s linear;
 }
 .tagline-text {
   position: absolute;
   top: 195px;
   left: 52px;
+  transition: 0.4s linear;
 }
 .generate-button {
   position: absolute;
@@ -40,6 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.4s linear;
 }
 .divider {
   position: absolute;
@@ -48,6 +53,7 @@ body {
   border-top: 1px solid #2f3e53;
   height: 0px;
   width: 446px;
+  transition: 0.4s linear;
 }
 .password-fields {
   display: flex;
@@ -68,6 +74,7 @@ body {
   height: 39px;
   width: 211px;
   border: none;
+  transition: 0.4s linear;
 }
 .pass-field-2 {
   font-family: "Source Code Pro", monospace;
@@ -80,6 +87,7 @@ body {
   height: 39px;
   width: 211px;
   border: none;
+  transition: 0.4s linear;
 }
 .divider-2 {
   position: absolute;
@@ -88,6 +96,7 @@ body {
   border-top: 1px solid #2f3e53;
   height: 0px;
   width: 446px;
+  transition: 0.4s linear;
 }
 .hover-char {
   position: absolute;
@@ -111,6 +120,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
+  transition: 0.4s linear;
 }
 .btns {
   position: absolute;
@@ -122,7 +132,6 @@ body {
 }
 .char-btn {
   background-color: #273549;
-  /* border: 2.5px solid #10b981; */
   border: none;
   width: 40px;
   color: #e4e7eb;
@@ -130,6 +139,7 @@ body {
   font-weight: 500;
   padding: 9px 4px 9px 4px;
   border-radius: 6px;
+  transition: 0.4s linear;
 }
 .border_help {
   border: 2px solid dodgerblue;
@@ -156,6 +166,7 @@ body {
   width: 100%;
   font-size: 14px;
   color: #4adf86;
+  transition: 0.4s linear;
 }
 #head-text {
   font-family: "Karla", sans-serif;
@@ -164,6 +175,7 @@ body {
   line-height: 40px;
   letter-spacing: -0.025em;
   color: #e5e7eb;
+  transition: color 0.4s linear;
 }
 #random-text {
   color: #4adf86;
@@ -173,6 +185,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #d1d5db;
+  transition: 0.4s linear;
 }
 #generate {
   cursor: pointer;
@@ -184,32 +197,144 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
+  transition: 0.4s linear;
 }
 #set-char-length-text {
   display: flex;
   position: absolute;
   left: 30px;
+  transition: 0.4s linear;
 }
-/* #pass1 {
-  cursor: auto;
-}
-#pass2 {
-  cursor: auto;
-} */
 
 /* Hovering over the pass fields */
 
 .pass-field-1:hover {
   cursor: pointer;
   border: 1.5px solid #55f991;
+  transition: 0.4s linear;
 }
 .pass-field-2:hover {
   cursor: pointer;
   border: 1.5px solid #55f991;
+  transition: 0.4s linear;
 }
-/* .hover-char div.char-len {
+
+/* Toggle for Dark/Light Mode */
+.toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: fit-content;
+}
+#sun {
+  color: #e4e7eb;
+  margin-left: 1px;
+  transition: 0.4s linear;
+}
+#moon {
+  color: #e4e7eb;
+  margin-right: 1px;
+  transition: 0.4s linear;
+}
+
+#checkbox {
+  position: absolute;
+  left: 0px;
   visibility: hidden;
 }
-.hover-char:hover div.char-len {
-  visibility: visible;
-} */
+.label {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  border: 2px solid #10b981;
+  width: 50px;
+  align-items: center;
+  justify-content: space-around;
+  height: 22px;
+  padding: 5px;
+  border-radius: 2rem;
+  transition: 0.4s linear;
+}
+.label::after {
+  cursor: pointer;
+  width: 27px;
+  height: 27px;
+  background-color: #10b981;
+  transition: transform 0.4s linear;
+  content: "";
+  position: absolute;
+  left: 2px;
+  border: none;
+  border-radius: 50%;
+}
+.checkbox:checked + .label::after {
+  transform: translateX(29px);
+}
+
+/* LIGHT MODE STYLES */
+body.light {
+  background-color: #d1fae5;
+  color: #2b283a;
+}
+
+body.light .main-container {
+  background-color: #ecfdf5;
+}
+
+body.light #head-text {
+  color: #2b283a;
+}
+
+body.light #moon {
+  color: #2b283a;
+}
+body.light #sun {
+  color: #2b283a;
+}
+body.light .char-len {
+  color: #2b283a;
+  border: 2.5px solid #10b981;
+}
+body.light #tagline-text {
+  color: #6b7280;
+}
+body.light .idfk {
+  color: #2b283a;
+}
+body.light .divider {
+  border-top: 1px solid #d5d4d8;
+}
+body.light .divider-2 {
+  border-top: 1px solid #d5d4d8;
+}
+body.light .pass-field-1 {
+  background-color: #d1fae5;
+}
+body.light #pass1 {
+  color: #2b283a;
+}
+body.light .pass-field-2 {
+  background-color: #d1fae5;
+}
+body.light #pass2 {
+  color: #2b283a;
+}
+body.light .pass-field-1:hover {
+  cursor: pointer;
+  border: 1.5px solid #2b283a;
+}
+body.light .pass-field-2:hover {
+  cursor: pointer;
+  border: 1.5px solid #2b283a;
+}
+body.light .char-btn {
+  background-color: #d1fae5;
+  color: #2b283a;
+}
+body.light #generate {
+  background-color: #0d9769;
+}
+body.light #tagline-text {
+  background-color: #0d9769;
+}

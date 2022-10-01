@@ -7,6 +7,7 @@ let charBtn16el = document.getElementById("char-btn-16")
 let charBtn14el = document.getElementById("char-btn-14")
 let charBtn10el = document.getElementById("char-btn-10")
 let charLength = 16
+let chkbox = document.getElementById("checkbox")
 copyText.textContent = ""
 isGenerated = false
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";",".","?",
@@ -83,3 +84,8 @@ function charlen10(){
     charBtn10el.style.border = "2px solid #10b981"
     charLength = 10
 }
+
+chkbox.addEventListener("change",()=> {
+    document.body.classList.toggle("light") 
+})
+
