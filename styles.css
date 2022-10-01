@@ -335,6 +335,6 @@ body.light .char-btn {
 body.light #generate {
   background-color: #0d9769;
 }
-body.light #tagline-text {
-  background-color: #0d9769;
+body.light #random-text {
+  color: #0d9769;
 }
