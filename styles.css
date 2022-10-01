@@ -23,19 +23,19 @@ body {
 }
 .head-text {
   position: absolute;
-  top: 110px;
+  top: 90px;
   left: 52px;
   width: 354px;
   height: 80px;
 }
 .tagline-text {
   position: absolute;
-  top: 215px;
+  top: 195px;
   left: 52px;
 }
 .generate-button {
   position: absolute;
-  top: 284px;
+  top: 264px;
   left: 52px;
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@ body {
 }
 .divider {
   position: absolute;
-  top: 361px;
+  top: 341px;
   left: 52px;
   border-top: 1px solid #2f3e53;
   height: 0px;
@@ -54,7 +54,7 @@ body {
   width: 446px;
   justify-content: space-between;
   position: absolute;
-  top: 396px;
+  top: 376px;
   left: 52px;
 }
 .pass-field-1 {
@@ -81,7 +81,56 @@ body {
   width: 211px;
   border: none;
 }
-
+.divider-2 {
+  position: absolute;
+  top: 445px;
+  left: 52px;
+  border-top: 1px solid #2f3e53;
+  height: 0px;
+  width: 446px;
+}
+.hover-char {
+  position: absolute;
+  top: 470px;
+  left: 52px;
+  width: 446px;
+  height: 50px;
+}
+.char-len {
+  position: absolute;
+  top: 470px;
+  left: 52px;
+  width: 414px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 3px 15px 3px 15px;
+  border: 2.5px solid #2f3e53;
+  color: azure;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btns {
+  position: absolute;
+  right: 30px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.char-btn {
+  background-color: #273549;
+  /* border: 2.5px solid #10b981; */
+  border: none;
+  width: 40px;
+  color: #e4e7eb;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 9px 4px 9px 4px;
+  border-radius: 6px;
+}
 .border_help {
   border: 2px solid dodgerblue;
 }
@@ -136,6 +185,11 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+#set-char-length-text {
+  display: flex;
+  position: absolute;
+  left: 30px;
+}
 /* #pass1 {
   cursor: auto;
 }
@@ -153,3 +207,9 @@ body {
   cursor: pointer;
   border: 1.5px solid #55f991;
 }
+/* .hover-char div.char-len {
+  visibility: hidden;
+}
+.hover-char:hover div.char-len {
+  visibility: visible;
+} */
