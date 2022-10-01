@@ -179,6 +179,7 @@ body {
 }
 #random-text {
   color: #4adf86;
+  transition: 0.4s linear;
 }
 #tagline-text {
   font-family: "Inter", sans-serif;
