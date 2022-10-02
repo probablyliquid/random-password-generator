@@ -212,12 +212,10 @@ body {
 .pass-field-1:hover {
   cursor: pointer;
   border: 1.5px solid #55f991;
-  transition: 0.4s linear;
 }
 .pass-field-2:hover {
   cursor: pointer;
   border: 1.5px solid #55f991;
-  transition: 0.4s linear;
 }
 
 /* Toggle for Dark/Light Mode */
